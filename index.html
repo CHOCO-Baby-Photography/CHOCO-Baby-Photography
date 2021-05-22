@@ -158,15 +158,33 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large">
     <div class="w3-content" style="max-width:600px">
-      <p style="text-align: center;">Do you want us to photograph you? Fill out the form :)</p>
+      <p style="text-align: center;">Do you need our service?</p>
       <form id="submit-form" action="">
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
         </div>
         <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input w3-border" type="text" name="Email" required>
+          <label>Contact Number</label>
+          <input class="w3-input w3-border" type="tel" name="Contact Number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="w3-section">
+          <label for="package"><span style="padding-right: 10px;">Package</span></label>
+              <select id="package" name="package">
+                <option value="Select here" selected>Select here</option>
+                <option value="ST001">ST001</option>
+                <option value="ST002">ST002</option>
+                <option value="NS001">NS001</option>
+                <option value="NS002">NS002</option>
+                <option value="NS003">NS003</option>
+                <option value="MS001">MS001</option>
+                <option value="MS002">MS002</option>
+                <option value="OF001">OF001</option>
+                <option value="OF002">OF002</option>
+                <option value="OF003">OF003</option>
+                <option value="OF004">OF004</option>
+                <option value="OF005">OF005</option>
+              </select>
         </div>
         <div class="w3-section">
           <label>Message</label>
